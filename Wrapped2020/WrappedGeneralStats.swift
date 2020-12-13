@@ -41,7 +41,7 @@ struct WrappedGeneralStats: View {
                     HStack(alignment: .top) {
                         WrappedField(field: .mostPlayedSong, value: "Advice For The Bride", theme: theme)
                         Spacer()
-                        WrappedField(field: .minutes, value: "?????", theme: theme)
+                        WrappedField(field: .minutes, value: "40821", theme: theme)
                     }.padding(.bottom, 32)
                     .padding(.horizontal, 20)
                 }

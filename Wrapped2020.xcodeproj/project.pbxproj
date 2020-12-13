@@ -74,12 +74,12 @@
 				7C0C16322586680A00C35F30 /* Resources */,
 				7C88A9B82578457F00BE5CFD /* Wrapped2020App.swift */,
 				7C88A9BA2578457F00BE5CFD /* ContentView.swift */,
+				7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */,
 				7C88A9C12578458100BE5CFD /* Info.plist */,
 				7C88A9BE2578458100BE5CFD /* Preview Content */,
 				7C88A9C8257849F500BE5CFD /* WrappedBackground.swift */,
 				7C88A9CB25784CD500BE5CFD /* WrappedColors.swift */,
 				7C88A9CE25784E2600BE5CFD /* WrappedField.swift */,
-				7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */,
 			);
 			path = Wrapped2020;
 			sourceTree = "<group>";
