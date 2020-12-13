@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0C16432586754300C35F30 /* Gotham Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0C16422586754300C35F30 /* Gotham Medium.otf */; };
 		7C88A9B92578457F00BE5CFD /* Wrapped2020App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88A9B82578457F00BE5CFD /* Wrapped2020App.swift */; };
 		7C88A9BB2578457F00BE5CFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88A9BA2578457F00BE5CFD /* ContentView.swift */; };
 		7C88A9BD2578458100BE5CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C88A9BC2578458100BE5CFD /* Assets.xcassets */; };
 		7C88A9C02578458100BE5CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C88A9BF2578458100BE5CFD /* Preview Assets.xcassets */; };
+		7C88A9C9257849F500BE5CFD /* WrappedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88A9C8257849F500BE5CFD /* WrappedBackground.swift */; };
+		7C88A9CC25784CD500BE5CFD /* WrappedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88A9CB25784CD500BE5CFD /* WrappedColors.swift */; };
+		7C88A9CF25784E2600BE5CFD /* WrappedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88A9CE25784E2600BE5CFD /* WrappedField.swift */; };
+		7CEE568A257857AE007D864A /* WrappedGeneralStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0C16422586754300C35F30 /* Gotham Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Medium.otf"; sourceTree = "<group>"; };
 		7C88A9B52578457F00BE5CFD /* Wrapped2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrapped2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C88A9B82578457F00BE5CFD /* Wrapped2020App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapped2020App.swift; sourceTree = "<group>"; };
 		7C88A9BA2578457F00BE5CFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C88A9BC2578458100BE5CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C88A9BF2578458100BE5CFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C88A9C12578458100BE5CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C88A9C8257849F500BE5CFD /* WrappedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedBackground.swift; sourceTree = "<group>"; };
+		7C88A9CB25784CD500BE5CFD /* WrappedColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedColors.swift; sourceTree = "<group>"; };
+		7C88A9CE25784E2600BE5CFD /* WrappedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedField.swift; sourceTree = "<group>"; };
+		7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedGeneralStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C0C16322586680A00C35F30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C0C16422586754300C35F30 /* Gotham Medium.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7C88A9AC2578457E00BE5CFD = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +70,16 @@
 		7C88A9B72578457F00BE5CFD /* Wrapped2020 */ = {
 			isa = PBXGroup;
 			children = (
+				7C88A9BC2578458100BE5CFD /* Assets.xcassets */,
+				7C0C16322586680A00C35F30 /* Resources */,
 				7C88A9B82578457F00BE5CFD /* Wrapped2020App.swift */,
 				7C88A9BA2578457F00BE5CFD /* ContentView.swift */,
-				7C88A9BC2578458100BE5CFD /* Assets.xcassets */,
 				7C88A9C12578458100BE5CFD /* Info.plist */,
 				7C88A9BE2578458100BE5CFD /* Preview Content */,
+				7C88A9C8257849F500BE5CFD /* WrappedBackground.swift */,
+				7C88A9CB25784CD500BE5CFD /* WrappedColors.swift */,
+				7C88A9CE25784E2600BE5CFD /* WrappedField.swift */,
+				7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */,
 			);
 			path = Wrapped2020;
 			sourceTree = "<group>";
@@ -127,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C88A9C02578458100BE5CFD /* Preview Assets.xcassets in Resources */,
+				7C0C16432586754300C35F30 /* Gotham Medium.otf in Resources */,
 				7C88A9BD2578458100BE5CFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEE568A257857AE007D864A /* WrappedGeneralStats.swift in Sources */,
 				7C88A9BB2578457F00BE5CFD /* ContentView.swift in Sources */,
+				7C88A9C9257849F500BE5CFD /* WrappedBackground.swift in Sources */,
 				7C88A9B92578457F00BE5CFD /* Wrapped2020App.swift in Sources */,
+				7C88A9CC25784CD500BE5CFD /* WrappedColors.swift in Sources */,
+				7C88A9CF25784E2600BE5CFD /* WrappedField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

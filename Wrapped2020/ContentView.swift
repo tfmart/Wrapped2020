@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            WrappedGeneralStats(theme: .primary)
+                .cornerRadius(4)
+                .padding(.horizontal, 20)
+                .padding(.top, 80)
+                .padding(.bottom, 80)
+        }.background(WrappedBackground().edgesIgnoringSafeArea(.all))
+        
     }
 }
 
