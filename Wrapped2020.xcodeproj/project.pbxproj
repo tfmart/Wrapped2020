@@ -18,6 +18,7 @@
 		7CE45CFB258E7777000F5106 /* WrappedTopArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE45CFA258E7777000F5106 /* WrappedTopArtist.swift */; };
 		7CE45CFE258E9504000F5106 /* WrappedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE45CFD258E9504000F5106 /* WrappedText.swift */; };
 		7CEE568A257857AE007D864A /* WrappedGeneralStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */; };
+		7CFE4D5B258EA3A00024683D /* WrappedHelpfulSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE4D5A258EA3A00024683D /* WrappedHelpfulSong.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7CE45CFA258E7777000F5106 /* WrappedTopArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedTopArtist.swift; sourceTree = "<group>"; };
 		7CE45CFD258E9504000F5106 /* WrappedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedText.swift; sourceTree = "<group>"; };
 		7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedGeneralStats.swift; sourceTree = "<group>"; };
+		7CFE4D5A258EA3A00024683D /* WrappedHelpfulSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedHelpfulSong.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				7CEE5689257857AE007D864A /* WrappedGeneralStats.swift */,
 				7CE45CFA258E7777000F5106 /* WrappedTopArtist.swift */,
+				7CFE4D5A258EA3A00024683D /* WrappedHelpfulSong.swift */,
 			);
 			path = "Stats Views";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				7CE45CFE258E9504000F5106 /* WrappedText.swift in Sources */,
 				7C88A9CC25784CD500BE5CFD /* WrappedColors.swift in Sources */,
 				7C88A9CF25784E2600BE5CFD /* WrappedField.swift in Sources */,
+				7CFE4D5B258EA3A00024683D /* WrappedHelpfulSong.swift in Sources */,
 				7CE45CFB258E7777000F5106 /* WrappedTopArtist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

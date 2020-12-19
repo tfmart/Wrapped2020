@@ -16,10 +16,8 @@ struct ContentView: View {
                 .padding(.top, 80)
                 .padding(.bottom, 80)
                 .background(WrappedBackground(theme: .general))
-                .edgesIgnoringSafeArea(.all)
             WrappedTopArtist()
-                .background(Color.wrappedPink.edgesIgnoringSafeArea(.all))
-                .edgesIgnoringSafeArea(.all)
+                .background(Color.wrappedPink)
         }.tabViewStyle(PageTabViewStyle())
     }
 }
