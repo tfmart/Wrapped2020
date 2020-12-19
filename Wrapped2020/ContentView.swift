@@ -18,6 +18,8 @@ struct ContentView: View {
                 .background(WrappedBackground(theme: .general))
             WrappedTopArtist()
                 .background(Color.wrappedPink)
+            WrappedHelpfulSong()
+                .background(Color.wrappedBlue)
         }.tabViewStyle(PageTabViewStyle())
     }
 }

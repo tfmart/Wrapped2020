@@ -9,10 +9,20 @@ import SwiftUI
 
 struct WrappedHelpfulSong: View {
     var body: some View {
-        HStack {
-            WrappedText("One song helped you get through it all", size: 28)
+        VStack {
+            Spacer()
+            WrappedText("One song helped you get through it all", size: 34)
                 .foregroundColor(.wrappedGreen)
-        }
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 60)
+            Image("album")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .scaleEffect(x: 0.85, y: 0.85)
+                .background(WrappedBackground(theme: .song).clipShape(Circle()))
+                .padding(.horizontal, 30)
+            Spacer()
+        }.padding()
     }
 }
 
