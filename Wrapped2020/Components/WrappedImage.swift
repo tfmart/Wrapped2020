@@ -21,7 +21,7 @@ struct WrappedImage: View {
     var body: some View {
         switch shape {
         case .rectangle:
-            Image("artist")
+            Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .scaleEffect(x: 0.85, y: 0.85)
