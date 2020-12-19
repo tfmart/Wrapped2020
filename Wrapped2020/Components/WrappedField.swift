@@ -41,13 +41,12 @@ struct WrappedField: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(title.uppercased())
+            WrappedText(title.uppercased(), size: 12)
                 .foregroundColor(titleColor)
-                .font(.custom("Gotham-Medium", size: 12, relativeTo: .caption))
                 .minimumScaleFactor(0.5)
-            Text(value)
+                
+            WrappedText(value, size: isHeadline ? 32 : 28)
                 .foregroundColor(foreground)
-                .font(.custom("Gotham-Medium", size: isHeadline ? 32 : 28, relativeTo: .title))
                 .minimumScaleFactor(0.5)
         }
     }

@@ -48,13 +48,11 @@ struct WrappedGeneralStats: View {
                 .background(backgroundColor)
                 //Footer
                 HStack {
-                    Text("Spotify")
+                    WrappedText("Spotify", size: 16)
                         .foregroundColor(backgroundColor)
-                        .font(.custom("Gotham-Medium", size: 16))
                     Spacer()
-                    Text("#2020WRAPPED")
+                    WrappedText("#2020WRAPPED", size: 16)
                         .foregroundColor(backgroundColor)
-                        .font(.custom("Gotham-Medium", size: 16))
                 }.padding()
                 .background(foregroundColor)
                 
