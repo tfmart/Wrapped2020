@@ -13,13 +13,12 @@ struct WrappedField: View {
     private var title: String
     private var foreground: Color
     private var titleColor: Color
-    private var isHeadline: Bool = false
+    private var isHeadline: Bool
+    private var spacing: CGFloat
     
-    init(field: FieldType, value: String, theme: Theme) {
+    init(field: FieldType, value: String, theme: Theme, isHeadline: Bool = false, spacing: FieldSpacing = .normal) {
         switch field {
-        case .topArtist:
-            title = "MY TOP ARTIST"
-            isHeadline = true
+        case .topArtist: title = "MY TOP ARTIST"
         case .minutes: title = "MINUTES LISTENED"
         case .mostPlayedSong: title = "TOP STREAMED SONG"
         case .topArtists: title = "TOP ARTISTS"
@@ -34,9 +33,18 @@ struct WrappedField: View {
         case .secondary:
             self.foreground = .wrappedPink
             self.titleColor = .black
+        case .ranks:
+            self.foreground = .wrappedGreen
+            self.titleColor = .white
+        }
+        
+        switch spacing {
+        case .normal: self.spacing = 0
+        case .extra: self.spacing = 2
         }
         
         self.value = value
+        self.isHeadline = isHeadline
     }
     
     var body: some View {
@@ -44,17 +52,19 @@ struct WrappedField: View {
             WrappedText(title.uppercased(), size: 12)
                 .foregroundColor(titleColor)
                 .minimumScaleFactor(0.5)
+                .padding(.bottom, spacing)
                 
             WrappedText(value, size: isHeadline ? 32 : 28)
                 .foregroundColor(foreground)
                 .minimumScaleFactor(0.5)
+                .padding(.bottom, spacing)
         }
     }
 }
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        WrappedField(field: .topArtist, value: "Daft Punk", theme: .secondary)
+        WrappedField(field: .topArtist, value: "Daft Punk", theme: .secondary, isHeadline: true)
     }
 }
 
@@ -65,4 +75,9 @@ enum FieldType {
     case topArtists
     case topSongs
     case topGenre
+}
+
+enum FieldSpacing {
+    case normal
+    case extra
 }

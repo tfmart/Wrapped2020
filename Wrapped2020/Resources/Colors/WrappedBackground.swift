@@ -26,6 +26,7 @@ struct WrappedBackground_Previews: PreviewProvider {
             WrappedBackground(theme: .general).overlay(WrappedText("General", size: 26).foregroundColor(.white))
             WrappedBackground(theme: .artist).overlay(WrappedText("Artist", size: 26).foregroundColor(.white))
             WrappedBackground(theme: .song).overlay(WrappedText("Song", size: 26).foregroundColor(.white))
+            WrappedBackground(theme: .genre).overlay(WrappedText("Genre", size: 26).foregroundColor(.white))
         }
     }
 }
@@ -34,6 +35,7 @@ public enum BackgroundTheme {
     case general
     case artist
     case song
+    case genre
     
     var colors: [Color] {
         switch self {
@@ -69,7 +71,17 @@ public enum BackgroundTheme {
                 Color(.sRGB, red: 209/255, green: 238/255, blue: 188/255, opacity: 1.0),
                 Color(.sRGB, red: 233/255, green: 234/255, blue: 96/255, opacity: 1.0),
                 Color(.sRGB, red: 210/255, green: 201/255, blue: 47/255, opacity: 1.0),
-                Color(.sRGB, red: 219/255, green: 167/255, blue: 38/255, opacity: 1.0),
+                Color(.sRGB, red: 219/255, green: 167/255, blue: 38/255, opacity: 1.0)
+            ]
+            
+        case .genre:
+            return [
+                Color(.sRGB, red: 176/255, green: 237/255, blue: 210/255, opacity: 1.0),
+                Color(.sRGB, red: 239/255, green: 232/255, blue: 71/255, opacity: 1.0),
+                Color(.sRGB, red: 236/255, green: 48/255, blue: 13/255, opacity: 1.0),
+                Color(.sRGB, red: 2/255, green: 1/255, blue: 3/255, opacity: 1.0),
+                Color(.sRGB, red: 71/255, green: 15/255, blue: 242/255, opacity: 1.0),
+                Color(.sRGB, red: 147/255, green: 193/255, blue: 202/255, opacity: 1.0)
             ]
         }
     }

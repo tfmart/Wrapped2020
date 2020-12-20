@@ -20,6 +20,12 @@ struct ContentView: View {
                 .background(Color.wrappedPink)
             WrappedHelpfulSong()
                 .background(Color.wrappedBlue)
+            WrappedRanks(theme: .ranks)
+                .cornerRadius(4)
+                .padding(.horizontal, 20)
+                .padding(.top, 80)
+                .padding(.bottom, 80)
+                .background(WrappedBackground(theme: .general))
         }.tabViewStyle(PageTabViewStyle())
     }
 }

@@ -21,6 +21,9 @@ struct WrappedGeneralStats: View {
         case .secondary:
             self.backgroundColor = .wrappedTeal
             self.foregroundColor = .wrappedPink
+        case .ranks:
+            self.backgroundColor = .wrappedBlue
+            self.foregroundColor = .wrappedGreen
         }
     }
     
@@ -31,12 +34,10 @@ struct WrappedGeneralStats: View {
                     Image("artist")
                         .resizable()
                         .frame(width: geometry.size.width, height: geometry.size.width, alignment: .center)
-                        .background(Color.white)
                         .padding(.bottom, 20)
-                    VStack(alignment: .leading) {
-                        WrappedField(field: .topArtist, value: "Tatsuro Yamashita", theme: theme)
-                    }
+                    WrappedField(field: .topArtist, value: "Tatsuro Yamashita", theme: theme, isHeadline: true)
                         .padding(.horizontal, 20)
+                        
                     Spacer()
                     HStack(alignment: .top) {
                         WrappedField(field: .mostPlayedSong, value: "Advice For The Bride", theme: theme)
@@ -55,7 +56,6 @@ struct WrappedGeneralStats: View {
                         .foregroundColor(backgroundColor)
                 }.padding()
                 .background(foregroundColor)
-                
             }
         })
     }
@@ -72,4 +72,6 @@ enum Theme {
     case primary
     /// Teal backgroun with pink foreground
     case secondary
+    /// Blue background with green foreground
+    case ranks
 }
