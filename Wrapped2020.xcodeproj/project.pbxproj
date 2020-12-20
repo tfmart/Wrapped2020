@@ -22,6 +22,7 @@
 		7CFE4D5E258EB3110024683D /* WrappedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE4D5D258EB3110024683D /* WrappedImage.swift */; };
 		7CFE4D64258FE93D0024683D /* WrappedRanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE4D63258FE93D0024683D /* WrappedRanks.swift */; };
 		7CFE4D68258FF2AA0024683D /* WrappedRankField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE4D67258FF2AA0024683D /* WrappedRankField.swift */; };
+		7CFE4D6C2590100D0024683D /* WrappedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE4D6B2590100D0024683D /* WrappedTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7CFE4D5D258EB3110024683D /* WrappedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedImage.swift; sourceTree = "<group>"; };
 		7CFE4D63258FE93D0024683D /* WrappedRanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedRanks.swift; sourceTree = "<group>"; };
 		7CFE4D67258FF2AA0024683D /* WrappedRankField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedRankField.swift; sourceTree = "<group>"; };
+		7CFE4D6B2590100D0024683D /* WrappedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WrappedTheme.swift; path = Wrapped2020/Helpers/WrappedTheme.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		7C88A9B72578457F00BE5CFD /* Wrapped2020 */ = {
 			isa = PBXGroup;
 			children = (
+				7CFE4D6A25900FEB0024683D /* Helpers */,
 				7CE45D03258E96EC000F5106 /* Stats Views */,
 				7CE45D02258E96D9000F5106 /* Components */,
 				7C88A9BC2578458100BE5CFD /* Assets.xcassets */,
@@ -140,6 +143,14 @@
 				7CFE4D63258FE93D0024683D /* WrappedRanks.swift */,
 			);
 			path = "Stats Views";
+			sourceTree = "<group>";
+		};
+		7CFE4D6A25900FEB0024683D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CFE4D6B2590100D0024683D /* WrappedTheme.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CEE568A257857AE007D864A /* WrappedGeneralStats.swift in Sources */,
+				7CFE4D6C2590100D0024683D /* WrappedTheme.swift in Sources */,
 				7C88A9BB2578457F00BE5CFD /* ContentView.swift in Sources */,
 				7C88A9C9257849F500BE5CFD /* WrappedBackground.swift in Sources */,
 				7C88A9B92578457F00BE5CFD /* Wrapped2020App.swift in Sources */,

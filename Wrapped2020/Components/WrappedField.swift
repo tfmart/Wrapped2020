@@ -9,14 +9,14 @@ import SwiftUI
 
 struct WrappedField: View {
     var value: String
-    
+    private var theme: WrappedTheme
     private var title: String
-    private var foreground: Color
-    private var titleColor: Color
     private var isHeadline: Bool
     private var spacing: CGFloat
     
-    init(field: FieldType, value: String, theme: Theme, isHeadline: Bool = false, spacing: FieldSpacing = .normal) {
+    init(field: FieldType, value: String, theme: WrappedTheme, isHeadline: Bool = false, spacing: FieldSpacing = .normal) {
+        self.theme = theme
+        
         switch field {
         case .topArtist: title = "MY TOP ARTIST"
         case .minutes: title = "MINUTES LISTENED"
@@ -24,18 +24,6 @@ struct WrappedField: View {
         case .topArtists: title = "TOP ARTISTS"
         case .topGenre: title = "TOP GENRE"
         case .topSongs: title = "TOP SONGS"
-        }
-        
-        switch theme {
-        case .primary:
-            self.foreground = .wrappedTeal
-            self.titleColor = .white
-        case .secondary:
-            self.foreground = .wrappedPink
-            self.titleColor = .black
-        case .ranks:
-            self.foreground = .wrappedGreen
-            self.titleColor = .white
         }
         
         switch spacing {
@@ -50,12 +38,12 @@ struct WrappedField: View {
     var body: some View {
         VStack(alignment: .leading) {
             WrappedText(title.uppercased(), size: 12)
-                .foregroundColor(titleColor)
+                .foregroundColor(theme.titleColor)
                 .minimumScaleFactor(0.5)
                 .padding(.bottom, spacing)
                 
             WrappedText(value, size: isHeadline ? 32 : 28)
-                .foregroundColor(foreground)
+                .foregroundColor(theme.foregroundColor)
                 .minimumScaleFactor(0.5)
                 .padding(.bottom, spacing)
         }

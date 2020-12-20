@@ -8,23 +8,10 @@
 import SwiftUI
 
 struct WrappedRanks: View {
-    private var backgroundColor: Color
-    private var foregroundColor: Color
-    private var theme: Theme
+    private var theme: WrappedTheme
     
-    init(theme: Theme) {
+    init(theme: WrappedTheme) {
         self.theme = theme
-        switch theme {
-        case .primary:
-            self.backgroundColor = .wrappedPink
-            self.foregroundColor = .wrappedTeal
-        case .secondary:
-            self.backgroundColor = .wrappedTeal
-            self.foregroundColor = .wrappedPink
-        case .ranks:
-            self.backgroundColor = .wrappedBlue
-            self.foregroundColor = .wrappedGreen
-        }
     }
     
     var body: some View {
@@ -58,16 +45,16 @@ struct WrappedRanks: View {
                 }
                 .padding(.horizontal, 30)
                 .padding(.bottom, 32)
-            }.background(backgroundColor)
+            }.background(theme.backgroundColor)
             //Footer
             HStack {
                 WrappedText("Spotify", size: 16)
-                    .foregroundColor(backgroundColor)
+                    .foregroundColor(theme.backgroundColor)
                 Spacer()
                 WrappedText("#2020WRAPPED", size: 16)
-                    .foregroundColor(backgroundColor)
+                    .foregroundColor(theme.backgroundColor)
             }.padding()
-            .background(foregroundColor)
+            .background(theme.foregroundColor)
         })
     }
 }
